@@ -1,4 +1,5 @@
 import tkinter as tk 
+import pygame
 
 
 
@@ -95,6 +96,10 @@ lbl_result = tk.Label(
 )
 lbl_result.place(x=35, y=245)
 
+
+pygame.mixer.init()
+pygame.mixer.music.load("Bad Piggies .mp3")
+pygame.mixer.music.play(-1)
 
 
 window.mainloop()
