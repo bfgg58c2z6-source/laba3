@@ -1,5 +1,5 @@
 import tkinter as tk 
-import random
+
 
 
 window=tk.Tk()
@@ -11,10 +11,10 @@ window.resizable(0,0)
 
 img_for = tk.PhotoImage(file="4b1513017043b475cf86cd044e8b9071.png").subsample(8,7)
 
-label_bg = tk.Label(window, image=img_for,bd=0,highlightthickness=0)
+label_bg = tk.Label(window, image=img_for,bd=0)
 label_bg.place(x=50, y=20)
 
-spisok=["A","B","С","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T",
+spisok=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T",
          "U","V","W","X","Y","Z","0","1","2","3","4","5","6","7","8","9"]
 
 def generation_code():
@@ -50,7 +50,6 @@ def generation_code():
     full_key = block_1 + "-" + block_2 + "-" + block_3
     lbl_result.config(text=full_key)
 
-letters=[]
 
 
 
